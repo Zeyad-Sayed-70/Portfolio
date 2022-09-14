@@ -27,6 +27,10 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  transition: .3s ease-in-out;
+  &:hover {
+    box-shadow: 3px 3px 20px 2px #504e4ecf;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -107,6 +111,13 @@ justify-content: space-around;
 padding: 2rem;
 `
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
+    color: #d8bfbf;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #d8bfbf26;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+    &:hover {
+      background-color: #ffffff2b; 
+    }
 `
